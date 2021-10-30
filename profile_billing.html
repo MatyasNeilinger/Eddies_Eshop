@@ -11,16 +11,20 @@
     </head>
     <body>
         <header>
-            <a href="index.html">
-                <img src="images/Eddie's_logo.png" alt="Eddie's logo" width="50" height="50">
-            </a>
-            <span>Eddie's</span>
-            <input type="text" placeholder="Čo hľadáte?">
-            <i class="fas fa-shopping-cart"></i>
-            <a href="">
-                <span>emailpouzivatela@mail.com</span>
-            </a>
-            <button type="button">Odhlásiť sa</button>
+            <span class="header-item">
+                <a href="index.html">
+                    <img src="images/Eddie's_logo.png" alt="Eddie's logo">
+                </a>
+            </span>
+            <span class="header-item" id="name">Eddie's</span>
+            <input class="header-item" id="header-input" type="text" placeholder="Čo hľadáte?">
+            <i class="header-item" class="fas fa-shopping-cart"></i>
+            <span class="header-item" id="header-profile">
+                <a href="">
+                    <span>emailpouzivatela@mail.com</span>
+                </a>
+                <button type="button">Odhlásiť sa</button>
+            </span>
         </header>
         <main>
             <nav>
@@ -61,7 +65,9 @@
             </div>
         </main>
         <footer>
-            <span>Kontaktuj nás</span>
+            <a href="contact_us.html">
+                <span>Kontaktuj nás</span>
+            </a>
             <span>Obchodné podmienky</span>
             <span>Podmienky použitia</span>
             <span>O nás</span>
