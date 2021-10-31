@@ -7,6 +7,7 @@
         <script src="https://kit.fontawesome.com/754f3c5aed.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="stylesheets/css_reset.css">
         <link rel="stylesheet" href="stylesheets/header_and_footer.css">
+        <link rel="stylesheet" href="stylesheets/profile.css">
     </head>
     <body>
         <header>
@@ -23,38 +24,30 @@
             </span>
         </header>
         <main>
-            <nav>
-                <a href="profile_contact.html">
-                    <p>Kontaktné informácie</p>
-                </a>
-                <a href="profile_shipping.html">
-                    <p>Dodacia adresa</p>
-                </a>
-                <a href="profile_billing.html">
-                    <p>Fakturačná adresa</p> 
-                </a>
-                <a href="recover_password.html">
-                    <p>Obnoviť heslo</p>
-                </a>
-            </nav>
-            <div>
-                <div>
+            <div class="navigation">
+                <a class="navigation-item" href="profile_contact.html">Kontaktné informácie</a>
+                <a class="navigation-item" href="profile_shipping.html">Dodacia adresa</a>
+                <a class="navigation-item" id="navigation-item-selected" href="profile_billing.html">Fakturačná adresa</a>
+                <a class="navigation-item" href="recover_password.html">Obnoviť heslo</a>
+            </div>
+            <div class="main-content">
+                <div class="main-item">
                     <p>Ulica:</p>
                     <input type="text">
                 </div>
-                <div>
+                <div class="main-item">
                     <p>Číslo domu / bytu:</p>
                     <input type="text">
                 </div>
-                <div>
+                <div class="main-item">
                     <p>Mesto:</p>
                     <input type="text">
                 </div>
-                <div>
+                <div class="main-item">
                     <p>PSČ:</p>
                     <input type="text">
                 </div>
-                <div>
+                <div class="main-item">
                     <button type="button">Uložiť</button>
                     <p hidden>Zmeny sa uložili!</p>
                 </div>

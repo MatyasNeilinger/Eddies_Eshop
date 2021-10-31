@@ -52,11 +52,11 @@ footer {
     background-color: var(--background-color);
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
     justify-items: center;
+    align-items: center;
 }
 
 .footer-item {
-    margin: 0.5rem;
+    padding: 0.5rem;
 }
