@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --background-color: hsl(334, 56%, 55%);
+}
+
+header {
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header-item {
+    margin: 0 1rem;
+}
+
+#header-input {
+    border-radius: 2rem;
+    padding-left: 1rem;
+    margin-left: auto;
+    height: 2.5rem;
+    width: 17.5rem;
+    border: 0.125rem solid black;
+}
+
+#header-profile{
+    flex-direction: column;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+header button {
+    border: none;
+    background-color: var(--background-color);
+    text-decoration: underline;
+    padding: 0.2rem;
+}
+
+#name {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+header a, footer a {
+    color: black;
+}
+
+footer {
+    background-color: var(--background-color);
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-item {
+    margin: 0.5rem;
+}
