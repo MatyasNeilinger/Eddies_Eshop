@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
     --background-color: hsl(334, 56%, 55%);
@@ -40,12 +41,23 @@ header button {
 
 #name {
     font-family: 'Lobster', cursive;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     text-decoration: none;
 }
 
 header a, footer a {
     color: black;
+}
+
+#vertical-line {
+    border-left: 0.15rem solid black;
+    height: 3rem;
+}
+
+#produkty {
+    text-decoration: none;
+    font-size: 2.25rem;
+    font-family: 'Lobster', sans-serif;
 }
 
 footer {
