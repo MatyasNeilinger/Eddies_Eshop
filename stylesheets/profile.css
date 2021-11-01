@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
 main {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -36,7 +34,6 @@ main {
 }
 
 .main-item {
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }

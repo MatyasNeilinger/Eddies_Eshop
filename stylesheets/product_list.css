@@ -13,10 +13,76 @@ main {
 }
 
 .price-input {
-    width: 5rem;
+    width: 3rem;
 }
 
 .main-content {
     grid-area: main-content;
     padding-top: 1rem;
+    padding-right: 10rem;;
+}
+
+.filter-group {
+    margin-bottom: 0.5rem;
+}
+
+.filter-name {
+    margin: 0.3rem;
+}
+
+.filters input, .filters label {
+    margin: 0.2rem;
+}
+
+#sorting {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.paging {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0; 
+}
+
+.number-of-items {
+    display: flex;
+    gap: 1rem;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    padding: 0.25rem 0.5rem;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: hsl(334, 56%, 55%);
+    color: white;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: hsl(334, 56%, 99%);
+}
+
+#products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.product {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.product img {
+    width: 15rem;
+    height: 18rem;
 }
