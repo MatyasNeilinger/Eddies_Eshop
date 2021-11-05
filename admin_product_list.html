@@ -6,21 +6,21 @@
         <meta name="author" content="Terézia Chromeková, Mátyás Neilinger">
         <script src="https://kit.fontawesome.com/754f3c5aed.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="stylesheets/css_reset.css">
-        <link rel="stylesheet" href="stylesheets/header.css">
+        <link rel="stylesheet" href="stylesheets/admin_header.css">
+        <link rel="stylesheet" href="stylesheets/admin_produtct_list.css">
     </head>
     <body>
         <header>
-            <a href="index.html">
-                <img src="images/Eddie's_logo.png" alt="Eddie's logo">
-            </a>
-            <span>Eddie's</span>
-            <button type="button">Odhlásiť sa</button>
+            <span class="header-item" id="name">Eddie's</span>
+            <button class="header-item" id="header-button" type="button">Odhlásiť sa</button>
         </header>
         <main>
-            <div>
-                <h1>Filtre</h1>
-                <div>
-                    <h3>Produkt</h3>
+            <div class="filters">
+                <div class="filter-group">
+                    <h1>Filtre</h1>
+                </div>
+                <div class="filter-group">
+                    <h3 class="filter-name">Produkt</h3>
                     <div>
                         <div>
                             <input type="checkbox">
@@ -32,8 +32,8 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3>Materiál</h3>
+                <div class="filter-group">
+                    <h3 class="filter-name">Materiál</h3>
                     <div>
                         <div>
                             <input type="checkbox">
@@ -45,8 +45,8 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3>Farba</h3>
+                <div class="filter-group">
+                    <h3 class="filter-name">Farba</h3>
                     <div>
                         <div>
                             <input type="checkbox">
@@ -66,32 +66,186 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <h3>Cena</h3>
+                <div class="filter-group">
+                    <h3 class="filter-name">Cena</h3>
                     <div>
                         <span>Od</span>
-                        <input type="text">
+                        <input class="price-input" type="text">
                         <span>Do</span>
-                        <input type="text">
+                        <input class="price-input" type="text">
                     </div>
                 </div>
             </div>
-            <div>
-                <button type="button">+ Nový produkt</button>
-                <input type="text" placeholder="Čo hľadáte?">
-                <select>
-                    <option>A-Z</option>
-                    <option>Z-A</option>
-                </select>
-            </div>
-            <div>
-                <i class="fas fa-image"></i>
-                <span>Meno produktu</span>
-                <span>Materiál</span>
-                <span>Farba</span>
-                <span>Cena</span>
-                <i class="far fa-edit"></i>
-                <i class="fas fa-trash"></i>
+            <div class="main-content">
+                <div class="main-content-item" id="command-bar">
+                    <button id="command-bar-button" type="button">+ Nový produkt</button>
+                    <input id="command-bar-input" type="text" placeholder="Čo hľadáte?">
+                    <div id="command-bar-sorting">
+                        <span>Triedenie:</span>
+                        <select>
+                            <option>A-Z</option>
+                            <option>Z-A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="main-content-item">
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="product-sub-information">
+                            <i class="fas fa-file-image"></i>
+                            <span>Meno produktu</span>
+                        </div>
+                        <span>Materiál</span>
+                        <span>Farba</span>
+                        <span>Cena</span>
+                        <div class="product-sub-information">
+                            <i class="far fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </body>

@@ -14,6 +14,8 @@ main {
 
 .price-input {
     width: 3rem;
+    border-radius: 0.25rem;
+    border: 0.1rem solid;
 }
 
 .main-content {

@@ -6,27 +6,29 @@
         <meta name="author" content="Terézia Chromeková, Mátyás Neilinger">
         <script src="https://kit.fontawesome.com/754f3c5aed.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="stylesheets/css_reset.css">
-        <link rel="stylesheet" href="stylesheets/header.css">
+        <link rel="stylesheet" href="stylesheets/admin_header.css">
+        <link rel="stylesheet" href="stylesheets/admin_login.css">
     </head>
     <body>
         <header>
-            <a href="index.html">
-                <img src="images/Eddie's_logo.png" alt="Eddie's logo">
-            </a>
-            <span>Eddie's</span>
+            <span class="header-item" id="name">Eddie's</span>
         </header>
         <main>
-            <div>
-                <p>Prihlasovacie meno:</p>
-                <input type="text">
-            </div>
-            <div>
-                <p>Heslo:</p>
-                <input type="text">
-            </div>
-            <div>
-                <button type="button">Prihlásiť sa</button>
-                <p hidden>Nesprávne meno alebo heslo!</p>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <p>Prihlasovacie meno:</p>
+                    <input type="text">
+                </div>
+                <div class="flex-item">
+                    <p>Heslo:</p>
+                    <input type="password">
+                </div>
+                <div class="flex-item">
+                    <button type="button">Prihlásiť sa</button>
+                </div>
+                <div class="flex-item">
+                    <p class="hidden">Nesprávne meno alebo heslo!</p>
+                </div>
             </div>
         </main>
     </body>
