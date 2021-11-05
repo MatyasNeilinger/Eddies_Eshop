@@ -4,7 +4,7 @@ main {
     grid-template-areas: "navigation main-content";
 }
 
-.navigation {
+nav {
     grid-area: navigation;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ main {
 .main-content input {
     height: 2.5rem;
     padding-left: 0.5rem;
-    width: 50rem;
+    width: 70%;
     border-radius: 1rem;
     border: 0.1rem solid;
 }

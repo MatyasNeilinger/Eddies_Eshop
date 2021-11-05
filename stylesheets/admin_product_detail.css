@@ -1,7 +1,7 @@
 main {
     display: grid;
-    grid-template-columns: 1fr 9fr;
-    grid-template-areas: "back product";
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: "back product change";
 }
 
 #back {
@@ -16,7 +16,6 @@ main {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "pictures detail";
     padding-top: 4rem;
-    padding-right: 10rem;
 }
 
 #pictures{
@@ -55,4 +54,20 @@ main {
 
 #detail h2, #detail h4{
     display: inline-block;
+}
+
+#change {
+    grid-area: change;
+}
+
+#change button {
+    background-color: hsl(334, 56%, 75%);
+    height: 2.5rem;
+    width: 13rem;
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
 }

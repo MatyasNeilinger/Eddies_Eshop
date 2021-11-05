@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <meta charset="utf-8">
+        <title>Admin</title>
+        <meta name="author" content="Terézia Chromeková, Mátyás Neilinger">
+        <script src="https://kit.fontawesome.com/754f3c5aed.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="stylesheets/css_reset.css">
+        <link rel="stylesheet" href="stylesheets/admin_header.css">
+        <link rel="stylesheet" href="stylesheets/admin_product_detail.css">
+    </head>
+    <body>
+        <header>
+            <span class="header-item" id="name">Eddie's</span>
+            <button class="header-item" id="header-button" type="button">Odhlásiť sa</button>
+        </header>
+        <main>
+            <div id="back">
+                <i class="fas fa-arrow-left fa-4x"></i>
+            </div>
+            <div id="product">
+                <div id="pictures">
+                    <img id="main" src="images/Placeholder Image.jpg">
+                    <img class="additional" src="images/Placeholder Image.jpg">
+                    <img class="additional" src="images/Placeholder Image.jpg">
+                    <img class="additional" src="images/Placeholder Image.jpg">
+                    <img class="additional" src="images/Placeholder Image.jpg">
+                </div>
+                <div id="detail">
+                    <div>
+                        <input type="text" placeholder="Meno Produktu">
+                        <textarea placeholder="Description - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est pariatur dicta consectetur quasi blanditiis sed veniam. Ea voluptatem eveniet est veniam magnam ipsa veritatis molestias autem suscipit neque, ab ut! Est pariatur dicta consectetur quasi blanditiis sed veniam. Ea voluptatem eveniet est veniam magnam ipsa veritatis molestias autem suscipit neque, ab ut!"></textarea>
+                    </div>
+                    <div>
+                        <h4>Typ produktu</h4>
+                        <select>
+                            <option>taška</option>
+                            <option>plyšák</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h4>Veľkosť</h4>
+                        <input type="text" placeholder="#">
+                    </div>
+                    <div>
+                        <h4>Farba</h4>
+                        <select>
+                            <option>oranžová</option>
+                            <option>zelená</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h4>Materiál</h4>
+                        <select>
+                            <option>bavlna</option>
+                            <option>polyester</option>
+                        </select>
+                    </div>
+                    <div>
+                        <h4>Cena</h4>
+                        <input type="text" placeholder="#">
+                    </div>
+                    <div>
+                        <h4>Množstvo</h4>
+                        <input type="text" placeholder="#">
+                    </div>
+                    <div>
+                        <select>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>...</option>
+                        </select>
+                        <button type="button">Pridať do košíka</button>
+                    </div>
+                    <div>
+                        <button type="button">Uložiť</button>
+                        <button type="button">Uložiť ako duplikát</button>
+                    </div>
+                </div>
+            </div>
+            <div id="change">
+                <button type="button">Používateľský pohľad</button>
+            </div>
+        </main>
+    </body>
+</html>
