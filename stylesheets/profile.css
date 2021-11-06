@@ -1,27 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 main {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "navigation main-content";
+    grid-gap: 1rem;
 }
 
 nav {
     grid-area: navigation;
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-    padding-left: 5rem;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 3.5rem);
+    width: 100%;
+    grid-gap: 0.5rem;
 }
 
 .navigation-item {
-    margin: 0.5rem;
-    border: 0.3rem solid black;
+    grid-column: 1 / 5;
+    border: 0.3rem solid;
     border-radius: 2rem;
     padding: 0.5rem;
-    width: 12rem;
     border-color: hsl(334, 56%, 90%);
     text-decoration: none;
     color: black;
-    font-family: 'Open Sans', sans-serif;
 }
 
 #navigation-item-selected {
@@ -30,7 +33,6 @@ nav {
 
 .main-content {
     grid-area: main-content;
-    padding-top: 1rem;
 }
 
 .main-item {
@@ -41,9 +43,10 @@ nav {
 .main-content input {
     height: 2.5rem;
     padding-left: 0.5rem;
-    width: 70%;
+    width: 100%;
     border-radius: 1rem;
     border: 0.1rem solid;
+    font-family: 'Open Sans', sans-serif;
 }
 
 main button {
@@ -59,4 +62,66 @@ main button {
 
 main button:active {
     background-color: mistyrose;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    nav{
+        grid-template-rows: repeat(4, 3rem);
+    }
+    
+    .navigation-item {
+        font-size: 0.9rem;
+    }
+
+    .main-item, main button {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    main {
+        grid-template-areas: 
+        "navigation navigation"
+        "main-content main-content";
+        grid-template-rows: 8rem auto;
+    }
+
+    nav{
+        grid-template-rows: repeat(2, 3rem);
+    }
+
+    .navigation-item {
+        grid-column: span 2;
+        width: 100%;
+        font-size: 0.9rem;
+        border: 0.2rem solid hsl(334, 56%, 90%);
+    }
+
+    .main-item, main button {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    main {
+        grid-template-areas: 
+        "navigation navigation"
+        "main-content main-content";
+        grid-template-rows: 5rem auto;
+    }
+
+    nav{
+        grid-template-rows: repeat(2, 2rem);
+    }
+
+    .navigation-item {
+        grid-column: span 2;
+        width: 100%;
+        font-size: 0.6rem;
+        border: 0.2rem solid hsl(334, 56%, 90%);
+    }
+
+    .main-item, main button {
+        font-size: 1.2rem;
+    }
 }
