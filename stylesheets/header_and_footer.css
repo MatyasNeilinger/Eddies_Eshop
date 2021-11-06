@@ -4,7 +4,11 @@
     --background-color: hsl(334, 56%, 55%);
 }
 
-header {
+#small {
+    display: none;
+}
+
+#big {
     background-color: var(--background-color);
     display: flex;
     align-items: center;
@@ -66,6 +70,7 @@ footer {
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     align-items: center;
+    font-size: 0.90rem;
 }
 
 .footer-item {
@@ -73,19 +78,100 @@ footer {
 }
 
 @media (max-width: 425px) {
-    #name {
-        font-size: 2.2rem;
+    #big {
+        display: none;
+    }
+    #small {
+        visibility: visible;
+        background-color: var(--background-color);
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
     }
 
-    #produkty {
-        font-size: 1.8rem;
+    #name {
+        font-size: 1.5rem;
+    }
+
+    #header-input {
+        width: 7.5rem;
+        height: 1.5rem;
+        padding-left: 0.5rem;
+    }
+
+    #checkbutton {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        font-size: 75%;
     }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
+    #big {
+        display: none;
+    }
 
+    #small {
+        visibility: visible;
+        background-color: var(--background-color);
+        display: flex;
+        align-items: center;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    #name {
+        font-size: 1.75rem;
+    }
+
+    #header-input {
+        width: 10rem;
+        height: 1.75rem;
+        padding-left: 0.7rem;
+    }
+
+    #checkbutton {
+        font-size: 1.75rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        font-size: 75%;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+    .header-item {
+        margin: 0 0.5rem;
+    }
 
+    #name {
+        font-size: 2rem;
+    }
+
+    #produkty {
+        font-size: 1.6rem;
+    }
+
+    #header-input {
+        width: 12.5rem;
+        height: 2rem;
+        padding-left: 0.9rem;
+    }
+
+    #header-profile {
+        font-size: 0.8rem;
+    }
+
+    .footer-item {
+        padding: 0.5rem 0.1rem;
+    }
+
+    footer {
+        font-size: 75%;
+    }
 }

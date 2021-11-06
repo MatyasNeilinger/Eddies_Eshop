@@ -8,14 +8,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 2rem;
-    border: none;
-    width: 55rem;
+    width: 50rem;
 }
 
 .flex-item {
     margin-top: 1rem;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
 }
 
@@ -23,16 +21,17 @@ main input, main textarea {
     width: 50rem;
     border-radius: 1rem;
     border: 0.1rem solid;
+    font-size: 1.2rem;
 }
 
 main input{
     height: 2.5rem;
-    padding-left: 0.5rem;
+    padding-left: 0.75rem;
 }
 
 main textarea {
     height: 15rem;
-    padding-left: 0.5rem;
+    padding-left: 0.75rem;
     padding-top: 0.5rem;
     resize: none;
 }
@@ -49,4 +48,38 @@ main button {
 
 main button:active {
     background-color: mistyrose;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.error {
+    opacity: 0.5;
+    font-size: 1rem;
+    color: red;
+}
+
+#success {
+    border-radius: 2rem;
+    border: 0.1rem solid;
+    background-color: hsl(334, 56%, 90%);
+    padding: 0.5rem 1rem;
+    opacity: 0.5;
+}
+
+@media (max-width: 425px) {
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
 }
