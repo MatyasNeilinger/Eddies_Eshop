@@ -8,26 +8,6 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font: 1rem 'Open Sans', sans-serif;
     background-color: hsl(334, 56%, 99%);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-    'header'
-    'main'
-    'footer';
-    height: 100vh;
-}
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
 }

@@ -13,7 +13,6 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    margin-bottom: 1rem;
 }
 
 .header-item {
@@ -65,7 +64,6 @@ header a, footer a {
 
 footer {
     background-color: var(--background-color);
-    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;

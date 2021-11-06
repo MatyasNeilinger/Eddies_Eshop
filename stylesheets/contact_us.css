@@ -1,39 +1,27 @@
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50rem;
-}
-
-.flex-item {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding: 2rem 2rem;
 }
 
 main input, main textarea {
-    width: 50rem;
+    width: 100%;
     border-radius: 1rem;
     border: 0.1rem solid;
-    font-size: 1.2rem;
+    padding-left: 0.75rem;
 }
 
-main input{
-    height: 2.5rem;
-    padding-left: 0.75rem;
+main input {
+    height: 2rem;
 }
 
 main textarea {
     height: 15rem;
-    padding-left: 0.75rem;
-    padding-top: 0.5rem;
     resize: none;
+    padding-top: 0.5rem;
 }
 
 main button {
@@ -42,26 +30,26 @@ main button {
     width: 10.5rem;
     border-radius: 2rem;
     border: 0.1rem solid black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
+    justify-self: center;
 }
 
 main button:active {
     background-color: mistyrose;
 }
 
-.title{
+.error {
+    opacity: 0.5;
+    font-size: 0.8rem;
+    color: red;
+}
+
+.title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-.error {
-    opacity: 0.5;
-    font-size: 1rem;
-    color: red;
+    margin-bottom: 0.6rem;
 }
 
 #success {
@@ -70,16 +58,5 @@ main button:active {
     background-color: hsl(334, 56%, 90%);
     padding: 0.5rem 1rem;
     opacity: 0.5;
-}
-
-@media (max-width: 425px) {
-
-}
-
-@media (min-width: 426px) and (max-width: 768px) {
-
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-
+    justify-self: center;
 }

@@ -1,0 +1,172 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+}
+
+.flex-item {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+main input, main textarea {
+    width: 50rem;
+    border-radius: 1rem;
+    border: 0.1rem solid;
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+main input{
+    height: 2.5rem;
+    padding-left: 0.75rem;
+}
+
+main textarea {
+    height: 15rem;
+    padding-left: 0.75rem;
+    padding-top: 0.5rem;
+    resize: none;
+}
+
+main button {
+    background-color: hsl(334, 56%, 75%);
+    height: 2.5rem;
+    width: 10.5rem;
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main button:active {
+    background-color: mistyrose;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.error {
+    opacity: 0.5;
+    font-size: 1rem;
+    color: red;
+}
+
+#success {
+    border-radius: 2rem;
+    border: 0.1rem solid;
+    background-color: hsl(334, 56%, 90%);
+    padding: 0.5rem 1rem;
+    opacity: 0.5;
+}
+
+@media (max-width: 425px) {
+    .flex-container {
+        width: 15rem;
+    }
+
+    .flex-item {
+        font-size: 0.9rem;
+    }
+
+    .error {
+        font-size: 0.6rem;
+    }
+
+    main input, main textarea {
+        width: 15rem;
+        font-size: 0.8rem;
+    }
+
+    main input{
+        height: 1.7rem;
+    }
+
+    main textarea {
+        height: 10rem;
+    }
+
+    main button {
+        height: 1.6rem;
+        width: 7rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .flex-container {
+        width: 20rem;
+    }
+
+    .flex-item {
+        font-size: 1rem;
+    }
+
+    .error {
+        font-size: 0.7rem;
+    }
+
+    main input, main textarea {
+        width: 20rem;
+        font-size: 0.8rem;
+    }
+
+    main input{
+        height: 1.7rem;
+    }
+
+    main textarea {
+        height: 10rem;
+    }
+
+    main button {
+        height: 1.8rem;
+        width: 8rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .flex-container {
+        width: 35rem;
+    }
+
+    .flex-item {
+        font-size: 1.5rem;
+    }
+
+    .error {
+        font-size: 0.8rem;
+    }
+
+    main input, main textarea {
+        width: 35rem;
+        font-size: 1rem;
+    }
+
+    main input{
+        height: 2rem;
+    }
+
+    main textarea {
+        height: 10rem;
+    }
+
+    main button {
+        height: 2rem;
+        width: 9rem;
+        font-size: 1.2rem;
+    }
+}
