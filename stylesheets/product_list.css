@@ -4,24 +4,25 @@ main {
     grid-template-areas: "filters main-content";
 }
 
+#filter-name {
+    display: none;
+}
+
 .filters {
     grid-area: filters;
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
-    padding-left: 5rem;
 }
 
 .price-input {
     width: 3rem;
     border-radius: 0.25rem;
     border: 0.1rem solid;
+    padding-left: 0.25rem;
 }
 
 .main-content {
     grid-area: main-content;
-    padding-top: 1rem;
-    padding-right: 10rem;;
 }
 
 .filter-group {
@@ -29,11 +30,11 @@ main {
 }
 
 .filter-name {
-    margin: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 
 .filters input, .filters label {
-    margin: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 #sorting {
@@ -76,15 +77,113 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    grid-gap: 0.5rem;
 }
 
 .product {
-    margin: 1rem 0;
     display: flex;
     flex-direction: column;
 }
 
 .product img {
-    width: 15rem;
-    height: 18rem;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    #products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    main {
+        padding: 1.5rem 1.5rem;
+        grid-template-areas:
+        "filters filters"
+        "main-content main-content"
+        ;
+        font-size: 0.8rem;
+    }
+
+    .filters {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #f-name {
+        grid-column: 1 / 3;
+    }
+
+    #color {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
+
+    #price {
+        grid-column: 1 / 3;
+    }
+
+    #sorting {
+        justify-content: center;
+    }
+
+    #products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .paging {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagination {
+        margin-top: 0.5rem;;
+    }
+}
+
+@media (max-width: 425px) {
+    main {
+        padding: 1rem 1rem;
+        grid-template-areas:
+        "filters filters"
+        "main-content main-content"
+        ;
+        font-size: 0.7rem;
+    }
+
+    .filters {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #f-name {
+        grid-column: 1 / 3;
+    }
+
+    #color {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+    }
+
+    #price {
+        grid-column: 1 / 3;
+    }
+
+    #sorting {
+        justify-content: center;
+    }
+
+    #products {
+        grid-template-columns: 1fr;
+    }
+
+    .paging {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagination {
+        margin-top: 0.5rem;;
+    }
 }
