@@ -23,6 +23,8 @@ header {
 }
 
 #produkty {
+    border-left: 0.15rem solid black;
+    padding-left: 1.5rem;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     text-decoration: none;
@@ -125,6 +127,8 @@ footer {
         grid-column: 1 / 4;
         grid-row: 2 / 3;
         font-size: 1rem;
+        border-left: none;
+        padding-left: 0;
     }
     
     #header-input {

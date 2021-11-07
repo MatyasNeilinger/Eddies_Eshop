@@ -94,6 +94,10 @@ main {
     #command-bar-button, #command-bar-input {
         padding: 0.2rem 0.5rem;
     }
+
+    .main-content-item, .product {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -154,6 +158,10 @@ main {
 
     #command-bar-button, #command-bar-input {
         padding: 0.2rem 0.5rem;
+    }
+
+    .main-content-item, .product {
+        margin-bottom: 0.8rem;
     }
 }
 
