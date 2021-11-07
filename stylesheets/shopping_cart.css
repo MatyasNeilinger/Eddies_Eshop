@@ -1,0 +1,90 @@
+.text-block {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.text-block > * {
+    padding: 5px;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.flex-item {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.flex-item > p[class] {
+    text-align: center;
+}
+
+.flex-item input {
+    height: 2.5rem;
+    padding-left: 0.5rem;
+    width: 50rem;
+    border-radius: 1rem;
+    border: 0.1rem solid;
+}
+
+.flex-container button:active {
+    background-color: mistyrose;
+}
+
+p.price {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: initial;
+}
+
+p.price:last-of-type {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.flex-container button {
+    background-color: hsl(334, 56%, 75%);
+    height: 2.5rem;
+    width: 12rem;
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 425px) {
+
+    .text-block > * {
+        font-size: 4rem;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .flex-item input {
+        width: 20rem;
+    }
+    .text-block > * {
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .text-block > * {
+        font-size: 1.5rem;
+    }
+
+
+}
