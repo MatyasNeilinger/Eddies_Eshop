@@ -16,71 +16,62 @@
         </header>
         <main>
             <div id="back">
-                <i class="fas fa-arrow-left fa-4x"></i>
+                <a href="admin_product_list.html"><i class="fas fa-arrow-left fa-3x"></i></a>
             </div>
-            <div id="product">
-                <div id="pictures">
-                    <img id="main" src="images/Placeholder Image.jpg">
-                    <img class="additional" src="images/Placeholder Image.jpg">
-                    <img class="additional" src="images/Placeholder Image.jpg">
-                    <img class="additional" src="images/Placeholder Image.jpg">
-                    <img class="additional" src="images/Placeholder Image.jpg">
+            <div id="pictures">
+                <img id="main-pic" src="images/Placeholder Image.jpg">
+                <img class="additional" src="images/Placeholder Image.jpg">
+                <img class="additional" src="images/Placeholder Image.jpg">
+                <img class="additional" src="images/Placeholder Image.jpg">
+                <img class="additional" src="images/Placeholder Image.jpg">
+                <div class="upload-images">
+                    <input class="upload-images" type="file" id="img" name="img" accept="image/*">
+                    <input class="upload-images" type="submit">
                 </div>
-                <div id="detail">
-                    <div>
-                        <input type="text" placeholder="Meno Produktu">
-                        <textarea placeholder="Description - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est pariatur dicta consectetur quasi blanditiis sed veniam. Ea voluptatem eveniet est veniam magnam ipsa veritatis molestias autem suscipit neque, ab ut! Est pariatur dicta consectetur quasi blanditiis sed veniam. Ea voluptatem eveniet est veniam magnam ipsa veritatis molestias autem suscipit neque, ab ut!"></textarea>
-                    </div>
-                    <div>
+            </div>
+            <div id="detail">
+                <input id="p-name" type="text" placeholder="Meno Produktu">
+                <textarea placeholder="Description - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est pariatur dicta consectetur quasi blanditiis sed veniam. Ea voluptatem eveniet est veniam magnam ipsa veritatis molestias autem suscipit neque, ab ut! Est pariatur dicta consectetur quasi blanditiis sed veniam. Ea voluptatem eveniet est veniam magnam ipsa veritatis molestias autem suscipit neque, ab ut!"></textarea>
+                <div id="parameters">
+                    <div class="gap-needed">
                         <h4>Typ produktu</h4>
                         <select>
                             <option>taška</option>
                             <option>plyšák</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="gap-needed">
                         <h4>Veľkosť</h4>
                         <input type="text" placeholder="#">
                     </div>
-                    <div>
+                    <div class="gap-needed">
                         <h4>Farba</h4>
                         <select>
                             <option>oranžová</option>
                             <option>zelená</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="gap-needed">
                         <h4>Materiál</h4>
                         <select>
                             <option>bavlna</option>
                             <option>polyester</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="gap-needed">
                         <h4>Cena</h4>
                         <input type="text" placeholder="#">
                     </div>
-                    <div>
+                    <div class="gap-needed">
                         <h4>Množstvo</h4>
                         <input type="text" placeholder="#">
                     </div>
-                    <div>
-                        <select>
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>...</option>
-                        </select>
-                        <button type="button">Pridať do košíka</button>
-                    </div>
-                    <div>
+                    <div id="saves" class="gap-needed">
                         <button type="button">Uložiť</button>
                         <button type="button">Uložiť ako duplikát</button>
                     </div>
                 </div>
-            </div>
-            <div id="change">
-                <button type="button">Používateľský pohľad</button>
+                <button id="switch" type="button">Používateľský pohľad</button>
             </div>
         </main>
     </body>
