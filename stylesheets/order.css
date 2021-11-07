@@ -1,10 +1,4 @@
-
-
 .text-block {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 5px;
     text-align: center;
     font-size: 1.5em;
 }
@@ -16,7 +10,6 @@
 .flex-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 1rem;
 }
 
@@ -32,7 +25,7 @@
 .flex-item input {
     height: 2.5rem;
     padding-left: 0.5rem;
-    width: 50rem;
+    width: 100%;
     border-radius: 1rem;
     border: 0.1rem solid;
 }
@@ -58,8 +51,7 @@ fieldset {
     border-radius: 2rem;
     border: 0.1rem solid black;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin: 1rem auto;
 }
 
 .flex-container button:active {
@@ -91,8 +83,46 @@ p.price:last-of-type {
     font-weight: bolder;
 }
 
-*[type="agree"] {
-    align: left;
+#log-in{
+    margin: 1rem auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+@media (max-width: 992px) {
+
+    .text-block > h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-block > p {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .text-block > h1 {
+        font-size: 4rem;
+    }
+
+    .text-block > p {
+        font-size: 2rem;
+    }
+
+    #continue, #pay {
+        margin: 1rem auto;
+    }
+
+
 }
 
 @media (max-width: 425px) {
@@ -101,7 +131,6 @@ p.price:last-of-type {
     }
 
     .flex-item input {
-        width: 10rem;
         height: 2rem;
         margin-top: 1rem;
     }
@@ -114,37 +143,6 @@ p.price:last-of-type {
 
     .hidden {
         font-size: 0.9rem;
-    }
-
-}
-
-@media (min-width: 426px) and (max-width: 768px) {
-    .flex-item input {
-        width: 20rem;
-    }
-    .text-block > h1 {
-        font-size: 4rem;
-    }
-
-    .text-block > p {
-        font-size: 2rem;
-    }
-
-
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-
-    .flex-item input {
-        width: 30rem;
-    }
-
-    .text-block > h1 {
-        font-size: 2.5rem;
-    }
-
-    .text-block > p {
-        font-size: 1.25rem;
     }
 
 }

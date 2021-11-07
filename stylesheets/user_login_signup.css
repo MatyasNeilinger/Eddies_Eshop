@@ -17,7 +17,6 @@
 .flex-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 1rem;
 }
 
@@ -30,24 +29,25 @@
     text-align: center;
 }
 
+.text-block > h1 {
+    font-size: 2.5rem;
+}
+
 p.info {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: black;
     opacity: 1;
-    max-width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
     display: inline-block;
 }
 
-*[type="agree"] {
-    align: left;
+.center {
+    margin: 1rem auto;
 }
 
 .flex-item input {
     height: 2.5rem;
     padding-left: 0.5rem;
-    width: 50rem;
+    width: 100%;
     border-radius: 1rem;
     border: 0.1rem solid;
 }
@@ -68,8 +68,10 @@ p.info {
     border-radius: 2rem;
     border: 0.1rem solid black;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+}
+
+#register {
+    margin: 1rem auto;
 }
 
 .flex-container button:active {
@@ -82,13 +84,45 @@ p.info {
     color: red;
 }
 
+@media (max-width: 992px) {
+
+    .text-block > * {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 5px;
+        overflow: hidden;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hidden {
+        font-size: 1.2rem;
+    }
+
+    .text-block > h1 {
+        font-size: 2rem;
+    }
+
+    p.info {
+        font-size: 1rem;
+    }
+
+    .text-block > * {
+        margin: 0;
+        padding: 5px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 425px) {
     .flex-item {
         font-size: 1rem;
     }
 
     .flex-item input {
-        width: 10rem;
         height: 2rem;
         margin-top: 1rem;
     }
@@ -103,61 +137,10 @@ p.info {
         font-size: 0.9rem;
     }
 
-    p.info {
-        font-size: 1.25rem;
-    }
-
     .text-block > * {
         margin: 0;
         padding: 5px;
         overflow: hidden;
         max-width: 100%;
-    }
-}
-
-@media (min-width: 426px) and (max-width: 768px) {
-    .flex-item input {
-        width: 20rem;
-    }
-
-    .hidden {
-        font-size: 1.2rem;
-    }
-
-    .text-block > h1 {
-        font-size: 4rem;
-    }
-
-    p.info {
-        font-size: 1.25rem;
-    }
-
-    .text-block > * {
-        margin: 0;
-        padding: 5px;
-        overflow: hidden;
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-    .flex-item input {
-        width: 30rem;
-    }
-
-    .text-block > h1 {
-        font-size: 2.5rem;
-    }
-
-    p.info {
-        font-size: 1.25rem;
-    }
-
-    .text-block > * {
-        margin-left: 15%;
-        margin-right: 15%;
-        padding: 5px;
-        overflow: hidden;
-        max-width: 70%;
     }
 }

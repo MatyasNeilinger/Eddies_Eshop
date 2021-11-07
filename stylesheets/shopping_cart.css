@@ -1,10 +1,6 @@
 .text-block {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 5px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .text-block > * {
@@ -20,7 +16,7 @@
 }
 
 .flex-item {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
     margin-bottom: 1rem;
 }
 
@@ -125,40 +121,51 @@ button.cancel {
     margin: 1%;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-@media (max-width: 425px) {
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+@media (max-width: 992px) {
 
     .text-block > * {
-        font-size: 4rem;
+        font-size: 1.5rem;
     }
 
-    .products {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    product {
+    .product {
         width: 100%;
         justify-content: space-evenly;
     }
 
-    product a {
-        font-size: 5rem;
-        width: 50%;
+    .product a {
+        font-size: 1rem;
     }
 
-    product p{
-        font-size: 4rem;
-        width: 50%;
+    .product p{
+        font-size: 1rem;
     }
 
     .product>p.price {
-        font-size: 1.2rem;
-        width: 20%;
+        font-size: 1rem;
+    }
+
+    .products {
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (max-width: 768px) {
+
+    main img {
+        display: none;
+    }
     .flex-item input {
         width: 20rem;
     }
@@ -169,57 +176,51 @@ button.cancel {
         margin-left: 5%;
         margin-right: 5%;
     }
-    product {
+    .product {
         width: 100%;
         justify-content: space-evenly;
     }
 
-    product a {
-        font-size: 5rem;
-        width: 50%;
+    .product a {
+        font-size: 0.8rem;
     }
 
-    product p{
-        font-size: 4rem;
-        width: 50%;
+    .product p{
+        font-size: 0.8rem;
     }
 
     .product>p.price {
-        font-size: 1.2rem;
-        width: 20%;
+        font-size: 0.8rem;
     }
 
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+
+@media (max-width: 425px) {
 
     .text-block > * {
         font-size: 1.5rem;
     }
 
-    product {
+    .products {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .product {
         width: 100%;
         justify-content: space-evenly;
     }
 
-    product a {
-        font-size: 3rem;
-        width: 50%;
+    .product a {
+        font-size: 0.5rem;
     }
 
-    product p{
-        font-size: 2rem;
-        width: 25%;
+    .product p{
+        font-size: 0.5rem;
     }
 
     .product>p.price {
-        font-size: 1.2rem;
-        width: 15%;
-    }
-
-    .products {
-        margin-left: 10%;
-        margin-right: 10%;
+        font-size: 0.5rem;
     }
 
 }
