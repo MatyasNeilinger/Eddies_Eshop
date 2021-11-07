@@ -1,6 +1,6 @@
 
 
-.welcome-text {
+.text-block {
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-.welcome-text > * {
+.text-block > * {
     padding: 5px;
 }
 
@@ -62,11 +62,11 @@ a:active {
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
-    .welcome-text > h1 {
+    .text-block > h1 {
         font-size: 4rem;
     }
 
-    .welcome-text > p {
+    .text-block > p {
         font-size: 2rem;
     }
 
@@ -93,11 +93,11 @@ a:active {
 
 @media (min-width: 769px) and (max-width: 992px) {
 
-    .welcome-text > h1 {
+    .text-block > h1 {
         font-size: 2.5rem;
     }
 
-    .welcome-text > p {
+    .text-block > p {
         font-size: 1.25rem;
     }
 
