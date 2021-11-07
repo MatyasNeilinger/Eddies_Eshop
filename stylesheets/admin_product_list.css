@@ -76,6 +76,10 @@ main {
     margin-bottom: 1.25rem;
 }
 
+#p-icons > * {
+    color: black;
+}
+
 .product-sub-information {
     display: flex;
     align-items: center;

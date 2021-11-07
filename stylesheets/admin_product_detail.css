@@ -1,73 +1,154 @@
 main {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-areas: "back product change";
+    grid-template-columns: 1fr 7fr 7fr;
+    grid-gap: 2rem;
+    padding-top: 3rem;
 }
 
 #back {
-    grid-area: back;
-    padding-top: 6rem;
-    padding-left: 7rem;
+    padding-top: 2rem;
 }
 
-#product {
-    grid-area: product;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "pictures detail";
-    padding-top: 4rem;
+#back > * {
+    color: black;
 }
 
-#pictures{
-    grid-area: pictures;
-    justify-self: right;
+#pictures {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 31rem;
-    padding-right: 2rem;
-    gap: 1rem;
+    grid-gap: 1rem;
+    margin-bottom: auto;
 }
 
-#pictures #main {
-    grid-column: 1/5;
-    width: 31rem;
-    height: 31rem;
+#main-pic {
+    grid-column: span 4;
 }
 
-#pictures .additional {
-    grid-row-start: 2;
-    width: 7rem;
-    height: 7rem;
+#pictures img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.upload-images {
+    grid-column: span 4;
+    justify-self: center;
 }
 
 #detail {
-    grid-area: detail;
-    justify-self: left;
-    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.gap-needed {
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#saves {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#detail input {
+    border-radius: 1rem;
+    border: 0.1rem solid;
+    padding: 0.25rem 0.75rem;
+}
+
+#detail textarea{
+    border-radius: 1rem;
+    border: 0.1rem solid;
+    padding: 0.25rem 0.75rem;
+    overflow-y: scroll;
+    resize: none;
+    height: 10rem;
+}
+
+#p-name {
+    font-size: 1.2rem;
+}
+
+#parameters {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#detail select {
     font-size: 1.1rem;
+    background-color: hsl(334, 56%, 95%);
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+    padding: 0.25rem 0.5rem;
 }
 
-#detail h1, #detail h2, #detail h4{
-    margin-bottom: 1rem;
-    margin-right: 0.5rem;
-}
-
-#detail h2, #detail h4{
-    display: inline-block;
-}
-
-#change {
-    grid-area: change;
-}
-
-#change button {
+#detail button {
     background-color: hsl(334, 56%, 75%);
-    height: 2.5rem;
-    width: 13rem;
     border-radius: 2rem;
     border: 0.1rem solid black;
     font-size: 1.2rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    margin-right: 2rem;
+    padding: 0.5rem;
+}
+
+#detail button:active {
+    background-color: mistyrose;
+}
+
+#saves button {
+    padding: 0.25rem 0.5rem;
+}
+
+@media (max-width: 992px) {
+    #detail {
+        font-size: 0.9rem;
+        gap: 0.5rem;
+    }
+
+    #detail button {
+        font-size: 1rem;
+    }
+
+    #detail select {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px){
+    main {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        grid-gap: 1rem;
+    }
+
+    #back {
+        font-size: 0.5rem;
+    }
+
+    #parameters {
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px){
+    #detail {
+        font-size: 0.8rem;
+        gap: 0.5rem;
+    }
+
+    #detail button {
+        font-size: 0.9rem;
+    }
+
+    #detail select {
+        font-size: 0.8rem;
+    }
+
+    .gap-needed {
+        width: 16rem;
+    }
 }
