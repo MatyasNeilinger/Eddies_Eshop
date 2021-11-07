@@ -1,58 +1,35 @@
 main {
     display: grid;
-    grid-template-columns: 1fr 9fr;
-    grid-template-areas: "back product";
+    grid-template-columns: 1fr 7fr 7fr;
+    grid-gap: 1rem;
+    padding-top: 3rem;
 }
 
 #back {
-    grid-area: back;
-    padding-top: 6rem;
-    padding-left: 7rem;
+    padding-top: 2rem;
 }
 
-#product {
-    grid-area: product;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "pictures detail";
-    padding-top: 4rem;
-    padding-right: 10rem;
+#back > * {
+    color: black;
 }
 
-#pictures{
-    grid-area: pictures;
-    justify-self: right;
+#pictures {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 31rem;
-    padding-right: 2rem;
-    gap: 1rem;
+    grid-gap: 1rem;
+    margin-bottom: auto;
 }
 
-#pictures #main {
-    grid-column: 1/5;
-    width: 31rem;
-    height: 31rem;
+#main-pic {
+    grid-column: span 4;
 }
 
-#pictures .additional {
-    grid-row-start: 2;
-    width: 7rem;
-    height: 7rem;
+#pictures img {
+    width: 100%;
+    aspect-ratio: 1;
 }
 
 #detail {
-    grid-area: detail;
-    justify-self: left;
-    width: 30rem;
-    font-size: 1.1rem;
-}
-
-#detail h1, #detail h2, #detail h4{
-    margin-bottom: 1rem;
-    margin-right: 0.5rem;
-}
-
-#detail h2, #detail h4{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
