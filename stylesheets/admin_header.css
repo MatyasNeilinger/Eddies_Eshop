@@ -14,11 +14,10 @@ header {
 #header-button {
     margin-left: auto;
     background-color: hsl(334, 56%, 75%);
-    height: 3rem;
-    width: 10rem;
     border-radius: 2rem;
     border: 0.1rem solid black;
     font-size: 1.5rem;
+    padding: 0.25rem 1rem;
 }
 
 #name {
@@ -31,16 +30,28 @@ header {
     #name {
         font-size: 2rem;
     }
+
+    #header-button {
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 768px) {
     #name {
         font-size: 1.75rem;
     }
+
+    #header-button {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 425px) {
     #name {
         font-size: 1.5rem;
+    }
+
+    #header-button {
+        font-size: 1rem;
     }
 }
