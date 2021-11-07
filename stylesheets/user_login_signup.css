@@ -32,6 +32,10 @@ p.info {
     opacity: 1;
 }
 
+*[type="agree"] {
+    align: left;
+}
+
 .flex-item input {
     height: 2.5rem;
     padding-left: 0.5rem;
@@ -40,10 +44,19 @@ p.info {
     border: 0.1rem solid;
 }
 
+.flex-item input[type="checkbox"] {
+    width: 1rem;
+    padding: initial;
+    border-radius: initial;
+    border: initial;
+    height: 1rem;
+    margin-right: 1rem;
+}
+
 .flex-container button {
     background-color: hsl(334, 56%, 75%);
     height: 2.5rem;
-    width: 10rem;
+    width: 12rem;
     border-radius: 2rem;
     border: 0.1rem solid black;
     font-size: 1.5rem;
@@ -81,6 +94,10 @@ p.info {
     .hidden {
         font-size: 0.9rem;
     }
+
+    p.info {
+        font-size: 1.25rem;
+    }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -95,6 +112,10 @@ p.info {
     .text-block > h1 {
         font-size: 4rem;
     }
+
+    p.info {
+        font-size: 1.25rem;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -104,5 +125,9 @@ p.info {
 
     .text-block > h1 {
         font-size: 2.5rem;
+    }
+
+    p.info {
+        font-size: 1.25rem;
     }
 }
