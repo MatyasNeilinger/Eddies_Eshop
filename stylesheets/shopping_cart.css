@@ -62,6 +62,63 @@ p.price:last-of-type {
     margin-top: 1rem;
 }
 
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.product img {
+    padding-top: 10px;
+    align-items: flex-end;
+    padding-right: 10px;
+    max-width: 2em;
+}
+
+.product a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 1.2em;
+}
+
+.product p {
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2em;
+}
+
+.product button {
+    height: 1.5em;
+    width: 1.5em;
+    margin: 5px;
+    border-color: black;
+    background-color: hsl(334, 56%, 75%);
+    font-size: 1.2em;
+}
+
+.product>p.price {
+    width: 10%;
+    font-weight: initial;
+    font-size: inherit;
+    text-align: right;
+}
+
+button.cancel {
+    border-color: black;
+    background-color: white;
+}
+
+.product input {
+    height: 2em;
+    width: 2em;
+    margin: 5px;
+}
+
+
 @media (max-width: 425px) {
 
     .text-block > * {
