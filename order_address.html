@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <title>Eddie's | Objednávka</title>
+    <meta name="author" content="Terézia Chromeková, Mátyás Neilinger">
+    <script src="https://kit.fontawesome.com/754f3c5aed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheets/css_reset.css">
+    <link rel="stylesheet" href="stylesheets/header_and_footer.css">
+    <link rel="stylesheet" href="stylesheets/order.css">
+</head>
+<body>
+<header>
+    <a id="name" href="index.html">Eddie's</a>
+    <a id="produkty" href="product_list_page.html">Produkty</a>
+    <input id="header-input" type="text" placeholder="Čo hľadáte?">
+    <a id="shopping-cart" href="shopping_cart.html">
+        <i class="fas fa-shopping-cart fa-2x"></i>
+    </a>
+    <a id="email" href="profile_contact.html">emailpouzivatela@mail.com</a>
+    <button id="log-out" type="button">Odhlásiť sa</button>
+</header>
+<main>
+    <div class="text-block">
+        <p>Dodacia adresa</p>
+    </div>
+    <form method="post">
+        <div class="flex-container">
+            <div class="flex-item">
+                <p>Meno:</p>
+                <input type="text">
+            </div>
+            <div class="flex-item">
+                <p>Priezvisko:</p>
+                <input type="text">
+            </div>
+            <div class="flex-item">
+                <p>Ulica:</p>
+                <input type="text">
+            </div>
+            <div class="flex-item">
+                <p>Číslo domu/bytu:</p>
+                <input type="text">
+            </div>
+            <div class="flex-item">
+                <p>Mesto:</p>
+                <input type="text">
+            </div>
+            <div class="flex-item">
+                <p>PSČ:</p>
+                <input type="number">
+            </div>
+            <div class="flex-item">
+                <div class="agree">
+                    <p class="info"><input type="checkbox" value="address">Dodacia adresa je iná ako fakturačná adresa.</p>
+                </div>
+            </div>
+            <div class="hidden">
+                <div class="text-block">
+                    <p>Fakturačná adresa</p>
+                </div>
+                <div class="flex-item">
+                    <p>Ulica:</p>
+                    <input type="text">
+                </div>
+                <div class="flex-item">
+                    <p>Číslo domu/bytu:</p>
+                    <input type="text">
+                </div>
+                <div class="flex-item">
+                    <p>Mesto:</p>
+                    <input type="text">
+                </div>
+                <div class="flex-item">
+                    <p>PSČ:</p>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="flex-item">
+                <button class="continue" type="submit">Pokračovať</button>
+            </div>
+        </div>
+    </form>
+</main>
+<footer>
+            <span class="footer-item">
+                <a href="contact_us.html">Kontaktuj nás</a>
+            </span>
+    <span class="footer-item">
+                <a href="business_conditions.html">Obchodné podmienky</a>
+            </span>
+    <span class="footer-item">
+                <a href="terms_of_use.html">Podmienky použitia</a>
+            </span>
+    <span class="footer-item">
+                <a href="about_us.html">O nás</a>
+            </span>
+    <span class="footer-item">
+                <a href="https://www.facebook.com/Eddies-104865371873843" target="_blank">
+                    <i class="fab fa-facebook-square fa-3x"></i>
+                </a>
+            </span>
+    <span class="footer-item">
+                <a href="https://www.instagram.com/eddiescuties/?utm_medium=copy_link" target="_blank">
+                    <i class="fab fa-instagram-square fa-3x"></i>
+                </a>
+            </span>
+</footer>
+</body>
+</html>

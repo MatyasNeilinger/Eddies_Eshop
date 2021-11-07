@@ -1,17 +1,16 @@
+
+
 .text-block {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 5px;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .text-block > * {
-    margin-left: 20%;
-    margin-right: 20%;
     padding: 5px;
-    overflow: hidden;
-    max-width: 60%;
 }
 
 .flex-container {
@@ -30,20 +29,6 @@
     text-align: center;
 }
 
-p.info {
-    font-size: 1rem;
-    color: black;
-    opacity: 1;
-    max-width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
-    display: inline-block;
-}
-
-*[type="agree"] {
-    align: left;
-}
-
 .flex-item input {
     height: 2.5rem;
     padding-left: 0.5rem;
@@ -52,7 +37,7 @@ p.info {
     border: 0.1rem solid;
 }
 
-.flex-item input[type="checkbox"] {
+.flex-item input[type="checkbox"], .flex-item input[type="radio"] {
     padding: initial;
     border-radius: initial;
     border: initial;
@@ -60,6 +45,11 @@ p.info {
     margin-right: 1rem;
     width: initial;
 }
+
+fieldset {
+    border: none;
+}
+
 
 .flex-container button {
     background-color: hsl(334, 56%, 75%);
@@ -76,10 +66,33 @@ p.info {
     background-color: mistyrose;
 }
 
-.hidden {
-    opacity: 0.5;
+div.text-block p:first-of-type{
+    font-weight: bolder;
+}
+
+p.info {
+    font-size: 1rem;
+    color: black;
+    opacity: 1;
+    max-width: 54%;
+    margin-right: 23%;
+    margin-left: 23%;
+    display: inline-block;
+}
+
+p.price {
+    display: inline-block;
     font-size: 1.5rem;
-    color: red;
+    font-weight: initial;
+}
+
+p.price:last-of-type {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+*[type="agree"] {
+    align: left;
 }
 
 @media (max-width: 425px) {
@@ -103,44 +116,25 @@ p.info {
         font-size: 0.9rem;
     }
 
-    p.info {
-        font-size: 1.25rem;
-    }
-
-    .text-block > * {
-        margin: 0;
-        padding: 5px;
-        overflow: hidden;
-        max-width: 100%;
-    }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
     .flex-item input {
         width: 20rem;
     }
-
-    .hidden {
-        font-size: 1.2rem;
-    }
-
     .text-block > h1 {
         font-size: 4rem;
     }
 
-    p.info {
-        font-size: 1.25rem;
+    .text-block > p {
+        font-size: 2rem;
     }
 
-    .text-block > * {
-        margin: 0;
-        padding: 5px;
-        overflow: hidden;
-        max-width: 100%;
-    }
+
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+
     .flex-item input {
         width: 30rem;
     }
@@ -149,15 +143,9 @@ p.info {
         font-size: 2.5rem;
     }
 
-    p.info {
+    .text-block > p {
         font-size: 1.25rem;
     }
 
-    .text-block > * {
-        margin-left: 15%;
-        margin-right: 15%;
-        padding: 5px;
-        overflow: hidden;
-        max-width: 70%;
-    }
+
 }
