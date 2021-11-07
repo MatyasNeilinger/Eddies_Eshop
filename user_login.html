@@ -7,6 +7,7 @@
   <script src="https://kit.fontawesome.com/754f3c5aed.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="stylesheets/css_reset.css">
   <link rel="stylesheet" href="stylesheets/header_and_footer.css">
+  <link rel="stylesheet" href="stylesheets/user_login_signup.css">
 </head>
 <body>
 <header>
@@ -20,6 +21,32 @@
   <button id="log-out" type="button">Odhlásiť sa</button>
 </header>
 <main>
+  <div class="text-block">
+    <h1>Prihláste sa:</h1>
+  </div>
+  <div class="flex-container">
+    <div class="flex-item">
+      <p>Email:</p>
+      <input type="text">
+    </div>
+    <div class="flex-item">
+      <p>Heslo:</p>
+      <input type="password">
+    </div>
+    <div class="flex-item">
+      <p class="hidden">Nesprávny email alebo heslo!</p>
+    </div>
+    <div class="flex-item">
+      <p class="info hidden" >Zabudli ste heslo? Obnovte ho <a href="recover_password.html">tu</a>.</p>
+    </div>
+    <div class="flex-item">
+      <button type="button">Prihlásiť sa</button>
+    </div>
+    <div class="flex-item">
+      <p class="info">Ešte nemáte účet? <a href="user_signup.html">Zaregistrujte sa</a>.</p>
+    </div>
+
+  </div>
 </main>
 <footer>
             <span class="footer-item">
