@@ -7,7 +7,11 @@
 }
 
 .text-block > * {
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 5px;
+    overflow: hidden;
+    max-width: 60%;
 }
 
 .flex-container {
@@ -30,6 +34,9 @@ p.info {
     font-size: 1rem;
     color: black;
     opacity: 1;
+    max-width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 *[type="agree"] {
@@ -98,6 +105,13 @@ p.info {
     p.info {
         font-size: 1.25rem;
     }
+
+    .text-block > * {
+        margin: 0;
+        padding: 5px;
+        overflow: hidden;
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -116,6 +130,13 @@ p.info {
     p.info {
         font-size: 1.25rem;
     }
+
+    .text-block > * {
+        margin: 0;
+        padding: 5px;
+        overflow: hidden;
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -129,5 +150,13 @@ p.info {
 
     p.info {
         font-size: 1.25rem;
+    }
+
+    .text-block > * {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 5px;
+        overflow: hidden;
+        max-width: 70%;
     }
 }
