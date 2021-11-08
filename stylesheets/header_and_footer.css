@@ -68,15 +68,18 @@ header a, footer a {
 
 footer {
     background-color: var(--background-color);
+}
+
+#footer-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     align-items: center;
-    font-size: 0.90rem;
+    font-size: 0.95rem;
 }
 
-.footer-item {
-    padding: 0.5rem;
+#footer-list > li {
+    padding: 0.25rem 0.1rem;
 }
 
 @media (max-width: 992px) {
@@ -103,12 +106,12 @@ footer {
         font-size: 0.8rem;
     }
 
-    .footer-item {
-        padding: 0.5rem 0.1rem;
+    #footer-list {
+        font-size: 0.7rem;
     }
 
-    footer {
-        font-size: 75%;
+    #footer-list > li {
+        padding: 0.5rem 0.25rem;
     }
 }
 
@@ -160,9 +163,9 @@ footer {
         font-size: 1rem;
     }
 
-    footer {
+    #footer-list {
         grid-template-columns: 1fr 1fr;
-        font-size: 75%;
+        font-size: 0.95rem;
     }
 }
 
@@ -182,8 +185,8 @@ footer {
         font-size: 0.7rem;
     }
 
-    footer {
+    #footer-list {
         grid-template-columns: 1fr;
-        font-size: 75%;
+        font-size: 0.7rem;
     }
 }
