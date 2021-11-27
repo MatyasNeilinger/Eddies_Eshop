@@ -6,24 +6,27 @@
 
 header {
     background-color: var(--background-color);
+}
+
+#header-list {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem;
 }
 
-#header-button {
-    margin-left: auto;
+#company-name {
+    font-family: 'Lobster', cursive;
+    font-size: 2.75rem;
+    text-decoration: none;
+}
+
+#header-button > button {
     background-color: hsl(334, 56%, 75%);
     border-radius: 2rem;
     border: 0.1rem solid black;
     font-size: 1.5rem;
     padding: 0.25rem 1rem;
-}
-
-#name {
-    font-family: 'Lobster', cursive;
-    font-size: 2.75rem;
-    text-decoration: none;
 }
 
 @media (max-width: 992px) {

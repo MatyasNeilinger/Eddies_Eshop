@@ -1,90 +1,54 @@
-.text-block {
+section {
+    padding-bottom: 2rem;
+    margin: 0 2rem;
+}
+
+section > * {
+    padding: 0.5rem 0;
+}
+
+section > h1 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
-.text-block > * {
-    padding: 5px;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-}
-
-.flex-item {
+.input-item {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
 }
 
-.flex-item > p[class] {
-    text-align: center;
-}
-
-.flex-item input {
+.input-item input {
     height: 2.5rem;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     width: 100%;
     border-radius: 1rem;
     border: 0.1rem solid;
 }
 
-.flex-item input[type="checkbox"], .flex-item input[type="radio"] {
-    padding: initial;
-    border-radius: initial;
-    border: initial;
-    height: 1rem;
-    margin-right: 1rem;
-    width: initial;
+#agree {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
 }
 
-fieldset {
-    border: none;
-}
-
-
-.flex-container button {
+main button {
     background-color: hsl(334, 56%, 75%);
-    height: 2.5rem;
-    width: 12rem;
     border-radius: 2rem;
     border: 0.1rem solid black;
     font-size: 1.5rem;
-    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    margin-top: 2rem;
 }
 
-.flex-container button:active {
+main button:active {
     background-color: mistyrose;
 }
 
-div.text-block p:first-of-type{
-    font-weight: bolder;
+#center {
+    text-align: center;
 }
 
-p.info {
-    font-size: 1rem;
-    color: black;
-    opacity: 1;
-    max-width: 54%;
-    margin-right: 23%;
-    margin-left: 23%;
-    display: inline-block;
-}
-
-p.price {
-    display: inline-block;
+#center > p {
     font-size: 1.5rem;
-    font-weight: initial;
-}
-
-p.price:last-of-type {
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-#log-in{
-    margin: 1rem auto;
 }
 
 input::-webkit-outer-spin-button,
@@ -95,54 +59,53 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
-  }
+}
 
 @media (max-width: 992px) {
-
-    .text-block > h1 {
-        font-size: 2.5rem;
-    }
-
-    .text-block > p {
+    #center > p {
         font-size: 1.25rem;
     }
-
 }
 
 @media (max-width: 768px) {
-    .text-block > h1 {
-        font-size: 4rem;
+    #center > p {
+        font-size: 1.1rem;
     }
 
-    .text-block > p {
-        font-size: 2rem;
+    section > h1 {
+        font-size: 1.5em;
     }
 
-    #continue, #pay {
-        margin: 1rem auto;
+    .input-item {
+        font-size: 1.5rem;
     }
 
-
+    main button {
+        font-size: 1.25rem;
+        padding: 0.3rem 1.25rem;
+    }
 }
 
 @media (max-width: 425px) {
-    .flex-item {
-        font-size: 1rem;
-    }
-
-    .flex-item input {
-        height: 2rem;
-        margin-top: 1rem;
-    }
-
-    .flex-item button{
-        font-size: 1rem;
-        height: 2rem;
-        width: 7rem;
-    }
-
-    .hidden {
+    #center > p {
         font-size: 0.9rem;
+    }
+
+    section > h1 {
+        font-size: 1.25em;
+    }
+
+    .input-item {
+        font-size: 1.25rem;
+    }
+
+    main button {
+        font-size: 1.1rem;
+        padding: 0.3rem 1.25rem;
+    }
+
+    section {
+        margin: 0;
     }
 
 }

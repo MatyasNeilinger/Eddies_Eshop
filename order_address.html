@@ -2,7 +2,7 @@
 <html lang="sk">
     <head>
         <meta charset="utf-8">
-        <title>Eddie's | Objednávka</title>
+        <title>Objednávka</title>
         <meta name="author" content="Terézia Chromeková, Mátyás Neilinger">
         <script src="https://kit.fontawesome.com/754f3c5aed.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="stylesheets/css_reset.css">
@@ -11,90 +11,77 @@
     </head>
     <body>
         <header>
-            <a id="name" href="index.html">Eddie's</a>
-            <a id="produkty" href="product_list_page.html">Produkty</a>
-            <input id="header-input" type="text" placeholder="Čo hľadáte?">
-            <a id="shopping-cart" href="shopping_cart.html">
-                <i class="fas fa-shopping-cart fa-2x"></i>
-            </a>
-            <a id="email" href="profile_contact.html">emailpouzivatela@mail.com</a>
-            <button id="log-out" type="button">Odhlásiť sa</button>
+            <nav id="header-list">
+                <a id="name" href="index.html">Eddie's</a>
+                <a id="produkty" href="product_list_page.html">Produkty</a>
+                <input id="header-input" type="text" placeholder="Čo hľadáte?">
+                <a id="shopping-cart" href="shopping_cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                <a id="email" href="profile_contact.html">emailpouzivatela@mail.com</a>
+                <button id="log-out" type="button">Odhlásiť sa</button>
+            </nav>
         </header>
         <main>
-            <div class="text-block">
-                <p>Dodacia adresa</p>
-            </div>
-            <form method="post">
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <p>Meno:</p>
-                        <input type="text">
-                    </div>
-                    <div class="flex-item">
-                        <p>Priezvisko:</p>
-                        <input type="text">
-                    </div>
-                    <div class="flex-item">
-                        <p>Ulica:</p>
-                        <input type="text">
-                    </div>
-                    <div class="flex-item">
-                        <p>Číslo domu/bytu:</p>
-                        <input type="text">
-                    </div>
-                    <div class="flex-item">
-                        <p>Mesto:</p>
-                        <input type="text">
-                    </div>
-                    <div class="flex-item">
-                        <p>PSČ:</p>
-                        <input type="number">
-                    </div>
-                    <div class="flex-item">
-                        <div class="agree">
-                            <p class="info"><input type="checkbox" value="address">Dodacia adresa je iná ako fakturačná adresa.</p>
-                        </div>
-                    </div>
-                    <div class="hidden">
-                        <div class="text-block">
-                            <p>Fakturačná adresa</p>
-                        </div>
-                        <div class="flex-item">
-                            <p>Ulica:</p>
-                            <input type="text">
-                        </div>
-                        <div class="flex-item">
-                            <p>Číslo domu/bytu:</p>
-                            <input type="text">
-                        </div>
-                        <div class="flex-item">
-                            <p>Mesto:</p>
-                            <input type="text">
-                        </div>
-                        <div class="flex-item">
-                            <p>PSČ:</p>
-                            <input type="number">
-                        </div>
-                    </div>
-                    <div class="flex-item">
-                        <button class="continue" type="submit">Pokračovať</button>
-                    </div>
+            <section>
+                <h1>Dodacia adresa</h1>
+                <div class="input-item">
+                    <p>Meno:</p>
+                    <input type="text">
                 </div>
-            </form>
+                <div class="input-item">
+                    <p>Priezvisko:</p>
+                    <input type="text">
+                </div>
+                <div class="input-item">
+                    <p>Ulica:</p>
+                    <input type="text">
+                </div>
+                <div class="input-item">
+                    <p>Číslo domu/bytu:</p>
+                    <input type="text">
+                </div>
+                <div class="input-item">
+                    <p>Mesto:</p>
+                    <input type="text">
+                </div>
+                <div class="input-item">
+                    <p>PSČ:</p>
+                    <input type="number">
+                </div>
+                <div id="agree">
+                    <input type="checkbox" value="address">
+                    <p class="info">Dodacia adresa je iná ako fakturačná adresa.</p>
+                </div>
+            </section>
+            <section>
+                <h1>Fakturačná adresa</h1>
+                <div class="input-item">
+                    <p>Ulica:</p>
+                    <input type="text">
+                </div>
+                <div class="input-item">
+                    <p>Číslo domu/bytu:</p>
+                    <input type="text">
+                </div>
+                <div class="input-item">
+                    <p>Mesto:</p>
+                    <input type="text">
+                </div>
+                <div class="input-item">
+                    <p>PSČ:</p>
+                    <input type="number">
+                </div>
+                <button class="continue" type="submit">Pokračovať</button>
+            </section>
         </main>
         <footer>
-            <ul id="footer-list">
-                <li><a href="contact_us.html">Kontaktuj nás</a></li>
-                <li><a href="business_conditions.html">Obchodné podmienky</a></li>
-                <li><a href="terms_of_use.html">Podmienky použitia</a></li>
-                <li><a href="about_us.html">O nás</a></li>
-                <li><a href="https://www.facebook.com/Eddies-104865371873843" target="_blank">
-                    <i class="fab fa-facebook-square fa-3x"></i></a>
-                </li>
-                <li><a href="https://www.instagram.com/eddiescuties/?utm_medium=copy_link" target="_blank">
-                    <i class="fab fa-instagram-square fa-3x"></i></a>
-                </li>
-            </ul>
+            <nav id="footer-list">
+                <a href="contact_us.html">Kontaktuj nás</a>
+                <a href="business_conditions.html">Obchodné podmienky</a>
+                <a href="terms_of_use.html">Podmienky použitia</a>
+                <a href="about_us.html">O nás</a>
+                <a href="https://www.facebook.com/Eddies-104865371873843" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+                <a href="https://www.instagram.com/eddiescuties/?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram-square fa-3x"></i></a>
+            </nav>
         </footer>
     </body>
 </html>
