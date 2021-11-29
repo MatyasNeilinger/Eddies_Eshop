@@ -7,7 +7,7 @@
         <script src="https://kit.fontawesome.com/754f3c5aed.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="stylesheets/css_reset.css">
         <link rel="stylesheet" href="stylesheets/header_and_footer.css">
-        <link rel="stylesheet" href="stylesheets/order.css">
+        <link rel="stylesheet" href="stylesheets/shopping_cart.css">
     </head>
     <body>
         <header>
@@ -21,56 +21,70 @@
             </nav>
         </header>
         <main>
-            <div class="text-block">
-                <p>Produkty v košíku:</p>
+            <h1>Produkty v košíku:</h1>
+            <section id="products">
+                <article class="product">
+                    <div class="first-row">
+                        <a href="product_detail.html"><img src="images/Placeholder Image.jpg"></a>
+                        <a href="product_detail.html">Meno produktu</a>
+                        <p>Farba</p>
+                    </div>
+                    <div class="second-row">
+                        <button>-</button>
+                        <input type="number" placeholder="1">
+                        <button>+</button>
+                        <p class="price">15.99€</p>
+                        <button class="cancel">X</button>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="first-row">
+                        <a href="product_detail.html"><img src="images/Placeholder Image.jpg"></a>
+                        <a href="product_detail.html">Meno produktu</a>
+                        <p>Farba</p>
+                    </div>
+                    <div class="second-row">
+                        <button>-</button>
+                        <input type="number" placeholder="1">
+                        <button>+</button>
+                        <p class="price">15.99€</p>
+                        <button class="cancel">X</button>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="first-row">
+                        <a href="product_detail.html"><img src="images/Placeholder Image.jpg"></a>
+                        <a href="product_detail.html">Meno produktu</a>
+                        <p>Farba</p>
+                    </div>
+                    <div class="second-row">
+                        <button>-</button>
+                        <input type="number" placeholder="1">
+                        <button>+</button>
+                        <p class="price">15.99€</p>
+                        <button class="cancel">X</button>
+                    </div>
+                </article>
+                <article class="product">
+                    <div class="first-row">
+                        <a href="product_detail.html"><img src="images/Placeholder Image.jpg"></a>
+                        <a href="product_detail.html">Meno produktu</a>
+                        <p>Farba</p>
+                    </div>
+                    <div class="second-row">
+                        <button>-</button>
+                        <input type="number" placeholder="1">
+                        <button>+</button>
+                        <p class="price">15.99€</p>
+                        <button class="cancel">X</button>
+                    </div>
+                </article>
+            </section>
+            <div class="text-block price">
+                <p class="price">Celková suma:</p>
+                <p class="price"> 55.65 €</p>
             </div>
-            <div class="products">
-                <div class="product">
-                    <a href="product_detail.html"><img src="images/Placeholder Image.jpg">Meno produktu</a>
-                    <p>Farba</p>
-                    <button>-</button>
-                    <input type="number" placeholder="1">
-                    <button>+</button>
-                    <p class="price">15.99 €</p>
-                    <button class="cancel">X</button>
-                </div>
-                <div class="product">
-                    <a href="product_detail.html"><img src="images/Placeholder Image.jpg">Meno produktu</a>
-                    <p>Farba</p>
-                    <button>-</button>
-                    <input type="number" placeholder="2">
-                    <button>+</button>
-                    <p class="price">23.98 €</p>
-                    <button class="cancel">X</button>
-                </div>
-                <div class="product">
-                    <a href="product_detail.html"><img src="images/Placeholder Image.jpg">Meno produktu</a>
-                    <p>Farba</p>
-                    <button>-</button>
-                    <input type="number" placeholder="1">
-                    <button>+</button>
-                    <p class="price">10.99 €</p>
-                    <button class="cancel">X</button>
-                </div>
-                <div class="product">
-                    <a href="product_detail.html"><img src="images/Placeholder Image.jpg">Meno produktu</a>
-                    <p>Farba</p>
-                    <button>-</button>
-                    <input type="number" placeholder="1">
-                    <button>+</button>
-                    <p class="price">1.99 €</p>
-                    <button class="cancel">X</button>
-                </div>
-            </div>
-            <div class="flex-container">
-                <div class="text-block price">
-                    <p class="price">Celková suma:</p>
-                    <p class="price"> 55.65 €</p>
-                </div>
-                <div class="flex-item">
-                    <button class="continue" type="button">Kúpiť</button>
-                </div>
-            </div>
+            <button class="continue" type="button">Kúpiť</button>
         </main>
         <footer>
             <nav id="footer-list">
